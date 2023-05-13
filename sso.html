@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="assets/image/favicon.png" type="image/x-icon">
+
+  <!-- Map CSS -->
+  <link rel="stylesheet" href="mapbox-gl-js/v0.53.0/mapbox-gl.css">
+
+  <!-- Libs CSS -->
+  <link rel="stylesheet" href="assets/css/libs.bundle.css">
+
+  <!-- Theme CSS -->
+  <link rel="stylesheet" href="assets/css/theme.bundle.css">
+
+  <!-- Title -->
+  <title>SayurSleman</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async="" src="gtag/js?id=UA-156446909-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+    gtag("config", "UA-156446909-2");
+
+  </script>
+
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <div class="container">
+
+      <!-- Brand -->
+      <a class="navbar-brand-img" href="index.html">
+        <img src="assets/image/logo.png" class="navbar-brand-img" alt="Logo Sayur Sleman">
+      </a>
+
+      <!-- Toggler -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Collapse -->
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+
+        <!-- Toggler -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fe fe-x"></i>
+        </button>
+
+        <!-- Navigation -->
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="about.html" id="navbarLandings">
+              About us
+            </a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="navbarDocumentation" data-bs-toggle="dropdown" href="#"
+              aria-haspopup="true" aria-expanded="false">
+              Programs
+            </a>
+            <div class="dropdown-menu dropdown-menu-md" aria-labelledby="navbarDocumentation">
+              <div class="list-group list-group-flush">
+                <a class="list-group-item" href="ssb.html">
+
+                  <!-- Icon -->
+                  <div class="icon icon-sm text-primary">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                      <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                      <g id="SVGRepo_iconCarrier">
+                        <path
+                          d="M22 8.5C22 12.09 19.09 15 15.5 15C15.33 15 15.15 14.99 14.98 14.98C14.73 11.81 12.19 9.27 9.01999 9.02C9.00999 8.85 9 8.67 9 8.5C9 4.91 11.91 2 15.5 2C19.09 2 22 4.91 22 8.5Z"
+                          fill="#006400"></path>
+                        <path opacity="0.4"
+                          d="M15 15.5C15 19.09 12.09 22 8.5 22C4.91 22 2 19.09 2 15.5C2 11.91 4.91 9 8.5 9C8.67 9 8.84999 9.01 9.01999 9.02C12.19 9.27 14.73 11.81 14.98 14.98C14.99 15.15 15 15.33 15 15.5Z"
+                          fill="#006400"></path>
+                        <path d="M7.62 14.62L8.5 13L9.38 14.62L11 15.5L9.38 16.38L8.5 18L7.62 16.38L6 15.5L7.62 14.62Z"
+                          fill="#006400"></path>
+                      </g>
+                    </svg>
+
+
+
+                  </div>
+
+                  <!-- Content -->
+                  <div class="ms-5">
+
+                    <!-- Heading -->
+                    <h6 class="fw-bold text-uppercase text-primary mb-0">
+                      Sayur Sleman Berbagi
+                    </h6>
+
+                    <!-- Text -->
+                    <p class="fs-sm text-gray-700 mb-0">
+                      Berbagi untuk sesama
+                    </p>
+
+                  </div>
+
+                </a>
+                <a class="list-group-item" href="sso.html">
+
+                  <!-- Icon -->
+                  <div class="icon icon-sm text-primary">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                      <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                      <g id="SVGRepo_iconCarrier">
+                        <path opacity="0.4"
+                          d="M16.1894 8.8599C15.7994 8.8599 15.4894 8.5499 15.4894 8.1599V6.8799C15.4894 5.8999 15.0694 4.9599 14.3494 4.2999C13.6094 3.6299 12.6594 3.3199 11.6594 3.4099C9.97937 3.5699 8.50938 5.2799 8.50938 7.0599V7.9599C8.50938 8.3499 8.19937 8.6599 7.80937 8.6599C7.41937 8.6599 7.10938 8.3499 7.10938 7.9599V7.0599C7.10938 4.5599 9.12938 2.2499 11.5194 2.0199C12.9094 1.8899 14.2494 2.3299 15.2794 3.2699C16.2994 4.1899 16.8794 5.5099 16.8794 6.8799V8.1599C16.8794 8.5499 16.5694 8.8599 16.1894 8.8599Z"
+                          fill="#006400"></path>
+                        <path
+                          d="M19.9597 8.96008C19.1197 8.03008 17.7397 7.58008 15.7197 7.58008H8.27975C6.25975 7.58008 4.87975 8.03008 4.03975 8.96008C3.06975 10.0401 3.09975 11.4801 3.20975 12.4801L3.90975 18.0501C4.11975 20.0001 4.90975 22.0001 9.20975 22.0001H14.7897C19.0897 22.0001 19.8797 20.0001 20.0897 18.0601L20.7897 12.4701C20.8997 11.4801 20.9197 10.0401 19.9597 8.96008ZM8.41975 13.1501H8.40975C7.85975 13.1501 7.40975 12.7001 7.40975 12.1501C7.40975 11.6001 7.85975 11.1501 8.40975 11.1501C8.96975 11.1501 9.41975 11.6001 9.41975 12.1501C9.41975 12.7001 8.96975 13.1501 8.41975 13.1501ZM15.4197 13.1501H15.4097C14.8597 13.1501 14.4097 12.7001 14.4097 12.1501C14.4097 11.6001 14.8597 11.1501 15.4097 11.1501C15.9697 11.1501 16.4197 11.6001 16.4197 12.1501C16.4197 12.7001 15.9697 13.1501 15.4197 13.1501Z"
+                          fill="#006400"></path>
+                      </g>
+                    </svg>
+                  </div>
+
+                  <!-- Content -->
+                  <div class="ms-5">
+
+                    <!-- Heading -->
+                    <h6 class="fw-bold text-uppercase text-primary mb-0">
+                      Sayur Sleman Online
+                    </h6>
+
+                    <!-- Text -->
+                    <p class="fs-sm text-gray-700 mb-0">
+                      Full list of components
+                    </p>
+
+                  </div>
+
+                </a>
+                <a class="list-group-item" href="ssa.html">
+
+                  <!-- Icon -->
+                  <div class="icon icon-sm text-primary">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                      <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                      <g id="SVGRepo_iconCarrier">
+                        <path opacity="0.4"
+                          d="M18.3791 12.8401V17.7701C18.3791 19.0401 17.3891 20.4001 16.1991 20.8001L13.0091 21.8601C12.4491 22.0501 11.5391 22.0501 10.9891 21.8601L7.79914 20.8001C6.59914 20.4001 5.61914 19.0401 5.61914 17.7701L5.62914 12.8401L10.0491 15.7201C11.1291 16.4301 12.9091 16.4301 13.9891 15.7201L18.3791 12.8401Z"
+                          fill="#006400"></path>
+                        <path
+                          d="M19.9795 6.46006L13.9895 2.53006C12.9095 1.82006 11.1295 1.82006 10.0495 2.53006L4.02953 6.46006C2.09953 7.71006 2.09953 10.5401 4.02953 11.8001L5.62953 12.8401L10.0495 15.7201C11.1295 16.4301 12.9095 16.4301 13.9895 15.7201L18.3795 12.8401L19.7495 11.9401V15.0001C19.7495 15.4101 20.0895 15.7501 20.4995 15.7501C20.9095 15.7501 21.2495 15.4101 21.2495 15.0001V10.0801C21.6495 8.79006 21.2395 7.29006 19.9795 6.46006Z"
+                          fill="#006400"></path>
+                      </g>
+                    </svg>
+                  </div>
+
+                  <!-- Content -->
+                  <div class="ms-5">
+
+                    <!-- Heading -->
+                    <h6 class="fw-bold text-uppercase text-primary mb-0">
+                      Sayur Sleman Academy
+                    </h6>
+
+                    <!-- Text -->
+                    <p class="fs-sm text-gray-700 mb-0">
+                      Keep track of changes
+                    </p>
+
+                  </div>
+
+                </a>
+                <a class="list-group-item" href="#">
+
+                  <!-- Icon -->
+                  <div class="icon icon-sm text-primary">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                      <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                      <g id="SVGRepo_iconCarrier">
+                        <path opacity="0.4"
+                          d="M10.2408 14.74C9.91084 14.41 9.47084 14.22 9.00084 14.22H3.92084C3.31084 14.22 2.75084 14.53 2.43084 15.05C2.11084 15.56 2.08084 16.17 2.34084 16.71C3.57084 19.23 5.79084 21.21 8.43084 22.14C8.61084 22.2 8.81084 22.24 9.00084 22.24C9.35084 22.24 9.70084 22.13 10.0008 21.92C10.4708 21.59 10.7508 21.05 10.7508 20.48L10.7608 15.98C10.7508 15.51 10.5708 15.07 10.2408 14.74Z"
+                          fill="#006400"></path>
+                        <path
+                          d="M22.4799 9.6C21.3599 4.68 17.0499 1.25 11.9999 1.25C6.94993 1.25 2.63993 4.68 1.51993 9.6C1.39993 10.12 1.51993 10.65 1.85993 11.07C2.19993 11.49 2.69993 11.73 3.23993 11.73H20.7699C21.3099 11.73 21.8099 11.49 22.1499 11.07C22.4799 10.65 22.5999 10.11 22.4799 9.6Z"
+                          fill="#006400"></path>
+                        <path opacity="0.4"
+                          d="M21.56 15.1C21.24 14.58 20.68 14.26 20.06 14.26L15 14.25C14.53 14.25 14.09 14.43 13.76 14.76C13.43 15.09 13.25 15.53 13.25 16L13.26 20.48C13.26 21.05 13.54 21.59 14.01 21.92C14.31 22.13 14.66 22.24 15.01 22.24C15.2 22.24 15.39 22.21 15.57 22.14C18.19 21.22 20.41 19.25 21.64 16.76C21.9 16.23 21.87 15.61 21.56 15.1Z"
+                          fill="#006400"></path>
+                      </g>
+                    </svg>
+                  </div>
+
+                  <!-- Content -->
+                  <div class="ms-5">
+
+                    <!-- Heading -->
+                    <h6 class="fw-bold text-uppercase text-primary mb-0">
+                      Sayur Sleman Catering
+                    </h6>
+
+                    <!-- Text -->
+                    <p class="fs-sm text-gray-700 mb-0">
+                      
+                      coming Soon
+                    </p>
+
+                  </div>
+
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="navbarAccount" data-bs-toggle="dropdown" href="#"
+              aria-haspopup="true" aria-expanded="false">
+              Careers
+            </a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link " id="navbarDocumentation" href="blog.html">
+              Blog
+            </a>
+          </li>
+        </ul>
+
+        <!-- Button -->
+        <a class="navbar-btn btn btn-sm btn-rounded-circle btn-primary px-5 lift ms-auto"
+          href="contact.html" target="_blank">
+          Contact Us
+        </a>
+
+      </div>
+
+    </div>
+  </nav>
+
+  <!-- WELCOME -->
+  <section class="pt-8 pb-11 pt-md-9 pb-md-12 py-lg-14 bg-light bg-between"
+    style="background-image: url(assets/img/illustrations/illustration-6-cropped.png), url(assets/img/illustrations/illustration-4-cropped.png);">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-10 col-lg-7 text-center" data-aos="fade-up">
+
+          <!-- Image (mobile) -->
+          <img src="assets/img/illustrations/illustration-8.png" alt="..." class="img-fluid mb-6 d-lg-none">
+
+          <!-- Heading -->
+          <h1 class="display-3 fw-normal">
+            Belanja Mudah. <br>
+            Diantar sampai rumah.
+          </h1>
+
+          <!-- Text -->
+          <p class="fs-lg text-muted mb-6 mb-md-8">
+            Kami menawarkan kemudahan dalam belanja sayuran, tanpa keluar rumah sudah bisa belanja
+          </p>
+
+          <!-- Button -->
+          <a href="#!" class="btn btn-primary me-1 lift">
+            Hubungi Whatsapp <i class="fe fe-arrow-right ms-3"></i>
+          </a>
+          <a href="#!" class="btn btn-primary-soft lift">
+            Lihat Daftar Harga
+          </a>
+
+        </div>
+      </div> <!-- / .row -->
+    </div> <!-- / .container -->
+  </section>
+
+  <!-- STEPS -->
+  <div class="section bg-soft-green pt-5 pt-md-5 pb-8 pb-md-11">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-4">
+          <div class="row">
+            <div class="col-auto col-md-12">
+
+              <!-- Step -->
+              <div class="row gx-0 align-items-center mb-md-5">
+                <div class="col-auto rounded-circle bg-dark">
+
+                  <!-- Number -->
+                  <a class="btn btn-sm btn-rounded-circle btn-gray-400-10 disabled opacity-1" href="#!">
+                    <span>-</span>
+                  </a>
+
+                </div>
+                <div class="col">
+
+                  <!-- Divider -->
+                  <hr class="d-none d-md-block text-dark me-n7">
+
+                </div>
+              </div> <!-- / .row -->
+
+            </div>
+            <div class="col col-md-12 ms-n5 ms-md-0">
+
+              <!-- Heading -->
+              <h3 class="text-dark">
+                Tuliskan pesanananmu
+              </h3>
+
+              <!-- Text -->
+              <p class="text-dark mb-6 mb-md-0">
+                Kamu bisa menuliskan pesananmu di whatsapp SSmin ya
+              </p>
+
+            </div>
+          </div> <!-- / .row -->
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="row">
+            <div class="col-auto col-md-12">
+
+              <!-- Step -->
+              <div class="row gx-0 align-items-center mb-md-5">
+                <div class="col-auto rounded-circle bg-dark">
+
+                  <!-- Number -->
+                  <a class="btn btn-sm btn-rounded-circle btn-gray-400-10 disabled opacity-1" href="#!">
+                    <span>-</span>
+                  </a>
+
+                </div>
+                <div class="col">
+
+                  <!-- Divider -->
+                  <hr class="d-none d-md-block text-dark me-n7">
+
+                </div>
+              </div> <!-- / .row -->
+
+            </div>
+            <div class="col col-md-12 ms-n5 ms-md-0">
+
+              <!-- Heading -->
+              <h3 class="text-dark">
+                Konfirmasi dan pembayaran
+              </h3>
+
+              <!-- Text -->
+              <p class="text-dark mb-6 mb-md-0">
+                Cek pesanan lagi dan lakukan pembayarannya ya
+              </p>
+
+            </div>
+          </div> <!-- / .row -->
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="row">
+            <div class="col-auto col-md-12">
+
+              <!-- Step -->
+              <div class="row gx-0 align-items-center mb-md-5">
+                <div class="col-auto rounded-circle bg-dark">
+
+                  <!-- Number -->
+                  <a class="btn btn-sm btn-rounded-circle btn-gray-400-10 disabled opacity-1" href="#!">
+                    <span>-</span>
+                  </a>
+
+                </div>
+              </div> <!-- / .row -->
+
+            </div>
+            <div class="col col-md-12 ms-n5 ms-md-0">
+
+              <!-- Heading -->
+              <h3 class="text-dark">
+                Tinggal ditunggu deh
+              </h3>
+
+              <!-- Text -->
+              <p class="text-dark mb-0">
+                Kamu tinggal menunggu pesanan kamu datang sampai rumah
+              </p>
+
+            </div>
+          </div> <!-- / .row -->
+        </div>
+      </div> <!-- / .row -->
+    </div> <!-- / .container-->
+  </div>
+
+
+  <!-- FOOTER -->
+  <footer class="py-8 py-md-11 bg-gray-200">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-4 col-lg-3">
+
+          <!-- Brand -->
+          <img src="assets/image/logo.png" alt="..." class="footer-brand img-fluid mb-2">
+
+          <!-- Text -->
+          <p class="text-gray-700 ms-5 mb-2">
+            Sociopreneur on Agriculture
+          </p>
+
+          <!-- Social -->
+          <ul class="list-unstyled list-inline list-social ms-5 mb-6 mb-md-0">
+            <li class="list-inline-item list-social-item me-3">
+              <a href="#!" class="text-decoration-none">
+                <img src="assets/img/icons/social/instagram.svg" class="list-social-icon" alt="...">
+              </a>
+            </li>
+            <li class="list-inline-item list-social-item me-3">
+              <a href="#!" class="text-decoration-none">
+                <img src="assets/img/icons/social/facebook.svg" class="list-social-icon" alt="...">
+              </a>
+            </li>
+            <li class="list-inline-item list-social-item me-3">
+              <a href="#!" class="text-decoration-none">
+                <img src="assets/img/icons/social/twitter.svg" class="list-social-icon" alt="...">
+              </a>
+            </li>
+            <li class="list-inline-item list-social-item">
+              <a href="#!" class="text-decoration-none">
+                <img src="assets/img/icons/social/pinterest.svg" class="list-social-icon" alt="...">
+              </a>
+            </li>
+          </ul>
+
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-2 ms-8">
+
+          <!-- Heading -->
+          <h6 class="fw-bold text-uppercase text-gray-700">
+            Products
+          </h6>
+
+          <!-- List -->
+          <ul class="list-unstyled text-muted mb-6 mb-md-8 mb-lg-0">
+            <li class="mb-3">
+              <a href="#!" class="text-reset">
+                Page Builder
+              </a>
+            </li>
+            <li class="mb-3">
+              <a href="#!" class="text-reset">
+                UI Kit
+              </a>
+            </li>
+            <li class="mb-3">
+              <a href="#!" class="text-reset">
+                Styleguide
+              </a>
+            </li>
+            <li class="mb-3">
+              <a href="#!" class="text-reset">
+                Documentation
+              </a>
+            </li>
+            <li>
+              <a href="#!" class="text-reset">
+                Changelog
+              </a>
+            </li>
+          </ul>
+
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+
+          <!-- Heading -->
+          <h6 class="fw-bold text-uppercase text-gray-700">
+            Services
+          </h6>
+
+          <!-- List -->
+          <ul class="list-unstyled text-muted mb-6 mb-md-8 mb-lg-0">
+            <li class="mb-3">
+              <a href="#!" class="text-reset">
+                Documentation
+              </a>
+            </li>
+            <li class="mb-3">
+              <a href="#!" class="text-reset">
+                Changelog
+              </a>
+            </li>
+            <li class="mb-3">
+              <a href="#!" class="text-reset">
+                Pagebuilder
+              </a>
+            </li>
+            <li>
+              <a href="#!" class="text-reset">
+                UI Kit
+              </a>
+            </li>
+          </ul>
+
+        </div>
+        <div class="col-6 col-md-4 offset-md-4 col-lg-2 offset-lg-0">
+
+          <!-- Heading -->
+          <h6 class="fw-bold text-uppercase text-gray-700">
+            Connect
+          </h6>
+
+          <!-- List -->
+          <ul class="list-unstyled text-muted mb-0">
+            <li class="mb-3">
+              <a href="#!" class="text-reset">
+                Page Builder
+              </a>
+            </li>
+            <li class="mb-3">
+              <a href="#!" class="text-reset">
+                UI Kit
+              </a>
+            </li>
+            <li class="mb-3">
+              <a href="#!" class="text-reset">
+                Styleguide
+              </a>
+            </li>
+            <li class="mb-3">
+              <a href="#!" class="text-reset">
+                Documentation
+              </a>
+            </li>
+            <li class="mb-3">
+              <a href="#!" class="text-reset">
+                Changelog
+              </a>
+            </li>
+            <li class="mb-3">
+              <a href="#!" class="text-reset">
+                Documentation
+              </a>
+            </li>
+            <li>
+              <a href="#!" class="text-reset">
+                Changelog
+              </a>
+            </li>
+          </ul>
+
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+
+          <!-- Heading -->
+          <h6 class="fw-bold text-uppercase text-gray-700">
+            Legal
+          </h6>
+
+          <!-- List -->
+          <ul class="list-unstyled text-muted mb-0">
+            <li class="mb-3">
+              <a href="#!" class="text-reset">
+                Documentation
+              </a>
+            </li>
+            <li class="mb-3">
+              <a href="#!" class="text-reset">
+                Changelog
+              </a>
+            </li>
+            <li>
+              <a href="#!" class="text-reset">
+                Pagebuilder
+              </a>
+            </li>
+          </ul>
+
+        </div>
+      </div> <!-- / .row -->
+    </div> <!-- / .container -->
+  </footer>
+
+  <!-- JAVASCRIPT -->
+  <!-- Map JS -->
+  <script src='mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+
+  <!-- Vendor JS -->
+  <script src="assets/js/vendor.bundle.js"></script>
+
+  <!-- Theme JS -->
+  <script src="assets/js/theme.bundle.js"></script>
+
+</body>
+
+</html>
